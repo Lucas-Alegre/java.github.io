@@ -1,25 +1,25 @@
 package GitHub;
 
 
-class Empresa{
+class Region{
 	
-	private Region region;
-	private Trabajador[] trabajador;
+	private String pais;
+	private int codigoPostal;
 	
-	public Trabajador (Region region, Trabajador[] trabajador) {
-		this.region = region;
-		this.trabajador = trabajador;	
+	public Region (String pais, int codigoPostal) {
+		this.pais = pais;
+		this.codigoPostal = codigoPostal;	
 	}
 
-	public String getRegion() {
-		return region;
+	public String getPais() {
+		return pais;
 	}
-	public int getTrabajador() {
-		return trabajador;
+	public int getcodigoPostal() {
+		return codigoPostal;
 	}
 	@Override
 	public String toString() {
-		return "Empresa ( " + getRegion() + ", " +  getTrabajador()+ " )";
+		return "Empresa ( " + getPais() + ", " +  getcodigoPostal()+ " )";
 	}
 }
 
