@@ -12,28 +12,26 @@ public class main {
 
 }
 
-class Persona{
+class Trabajador{
 	
-	private String nombre;
-	private String apellido;
+	private Persona persona;
+	private int dni;
 	
-	public Persona(String nombre,String apellido) {
-		this.apellido = apellido;
-		this.nombre = nombre;	
+	public Trabajador (Persona persona, int dni) {
+		this.persona = persona;
+		this.dni = dni;	
 	}
 
-	public String getNombre() {
-		return nombre;
+	public String getPersona() {
+		return persona;
 	}
-	public String getApellido() {
-		return apellido;
+	public int getDni() {
+		return dni;
 	}
 	@Override
 	public String toString() {
-		return "Persona ( " + getApellido() + ", " +  getNombre()+ " )";
+		return "Trabajador ( " + getPersona() + ", " +  getDni()+ " )";
 	}
-
-}
 
 
 
