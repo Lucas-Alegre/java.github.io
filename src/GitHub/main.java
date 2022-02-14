@@ -3,7 +3,7 @@ package GitHub;
 
 class Empresa{
 	
-<<<<<<< HEAD
+
 
 
 
@@ -40,14 +40,14 @@ class Trabajador{
 	public Trabajador (Persona persona, int dni) {
 		this.persona = persona;
 		this.dni = dni;	
-=======
+
 	private Region region;
 	private Trabajador[] trabajador;
 	
 	public Trabajador (Region region, Trabajador[] trabajador) {
 		this.region = region;
 		this.trabajador = trabajador;	
->>>>>>> Facu
+		//Facu
 	}
 
 	public String getRegion() {
@@ -61,6 +61,8 @@ class Trabajador{
 		return "Empresa ( " + getRegion() + ", " +  getTrabajador()+ " )";
 	}
 }
+	
+	
 	
 
 
