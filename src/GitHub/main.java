@@ -7,5 +7,33 @@ public class main {
 		System.out.println("Hola mundo");
 
 	}
+	
+	
 
 }
+
+class Persona{
+	
+	private String nombre;
+	private String apellido;
+	
+	public Persona(String nombre,String apellido) {
+		this.apellido = apellido;
+		this.nombre = nombre;	
+	}
+
+	public String getNombre() {
+		return nombre;
+	}
+	public String getApellido() {
+		return apellido;
+	}
+	@Override
+	public String toString() {
+		return "Persona ( " + getApellido() + ", " +  getNombre()+ " )";
+	}
+
+}
+
+
+
