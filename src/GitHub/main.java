@@ -1,13 +1,9 @@
 package GitHub;
 
-public class main {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Hola mundo");
-
-	}
+class Empresa{
 	
+<<<<<<< HEAD
 
 
 
@@ -44,18 +40,28 @@ class Trabajador{
 	public Trabajador (Persona persona, int dni) {
 		this.persona = persona;
 		this.dni = dni;	
+=======
+	private Region region;
+	private Trabajador[] trabajador;
+	
+	public Trabajador (Region region, Trabajador[] trabajador) {
+		this.region = region;
+		this.trabajador = trabajador;	
+>>>>>>> Facu
 	}
 
-	public String getPersona() {
-		return persona;
+	public String getRegion() {
+		return region;
 	}
-	public int getDni() {
-		return dni;
+	public int getTrabajador() {
+		return trabajador;
 	}
 	@Override
 	public String toString() {
-		return "Trabajador ( " + getPersona() + ", " +  getDni()+ " )";
+		return "Empresa ( " + getRegion() + ", " +  getTrabajador()+ " )";
 	}
+}
+	
 
 
 
